@@ -116,7 +116,7 @@
 background-image: url('images/hero-bg.png');  /* if it’s in an images folder */
 background-image: url('https://example.com/photo.jpg');  /* online image */
 }
-.card{
+
  
   
 
@@ -153,6 +153,70 @@ background-image: url('https://example.com/photo.jpg');  /* online image */
   border-radius: 4px;
 }
 
+.travel-package-container {
+    background-color: #1e8449; /* A dark green color */
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
 
+.travel-package-container h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
 
-    
+.search-form-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 14px;
+}
+
+.search-form-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-form-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.search-btn {
+    background-color: #0099ff; /* A blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.contact-btn {
+    background-color: white;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
