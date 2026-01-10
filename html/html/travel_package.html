@@ -131,118 +131,246 @@
 
 
 <main>
-  <div class="container">
-    <div class="row ">
-      <aside class="col-lg-3 col-md-4">
+  
+  <section class="search-filter-section py-4 bg-light">
+    <div class="container">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-6">
+          <label class="form-label fw-bold">Search Packages</label>
+          <input type="text" class="form-control form-control-lg" placeholder="Search by destination, package name...">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label fw-bold">Price Range</label>
+          <select class="form-select form-select-lg">
+            <option>All Prices</option>
+            <option>Under $300</option>
+            <option>$300 - $500</option>
+            <option>$500 - $1000</option>
+            <option>Above $1000</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label fw-bold">Duration</label>
+          <select class="form-select form-select-lg">
+            <option>Any Duration</option>
+            <option>3-5 nights</option>
+            <option>5-7 nights</option>
+            <option>7+ nights</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <!-- Example single danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Danger
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-    <h5 class="card-title">Card title</h5>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Sidebar Filter -->
+      <aside class="col-lg-3">
+        <div class="card sticky-top">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0"><i class="bi bi-funnel"></i> Advanced Filters</h5>
+          </div>
+          <div class="card-body">
+            <!-- Destination Filter -->
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Destination</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="dest1">
+                <label class="form-check-label" for="dest1">Bali Island</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="dest2">
+                <label class="form-check-label" for="dest2">Maldives</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="dest3">
+                <label class="form-check-label" for="dest3">Thailand</label>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- Rating Filter -->
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Rating</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rating1">
+                <label class="form-check-label" for="rating1">⭐⭐⭐⭐⭐ 5 Stars</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rating2">
+                <label class="form-check-label" for="rating2">⭐⭐⭐⭐ 4+ Stars</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rating3">
+                <label class="form-check-label" for="rating3">⭐⭐⭐ 3+ Stars</label>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- Package Type Filter -->
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Package Type</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type1">
+                <label class="form-check-label" for="type1">Flight + Hotel</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type2">
+                <label class="form-check-label" for="type2">All-inclusive</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type3">
+                <label class="form-check-label" for="type3">Luxury Resort</label>
+              </div>
+            </div>
+
+            <button class="btn btn-outline-primary w-100">Clear Filters</button>
+          </div>
+        </div>
       </aside>
-            <div class="col-md-4">
-        <div class="card package-card h-100">
-          <img src="../img/images (1).jpg" alt="Bali Island tropical beach destination" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Bali Island</h5>
-            <p class="card-text">5 nights • Flight + Hotel • All-inclusive</p>
-            <a href="#" class="btn btn-primary">Book now</a>
-            <div class="text-end">
-              <small class="text-muted">Per Person</small>
-              <h5 class="fw-bold mb-0">$399</h5>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card package-card h-100">
-          <img src="../img/caption.jpg" alt="Maldives beach paradise with luxury resort" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Maldives Beach Paradise</h5>
-            <p class="card-text">7 nights • Hanifaru Bay • luxury resorts</p>
-            <a href="#" class="btn btn-primary">Book now</a>
-            <div class="text-end">
-              <small class="text-muted">Per Person</small>
-              <h5 class="fw-bold mb-0">$499</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card package-card h-100">
-          <img src="../img/images (1).jpg" alt="Bali Island tropical beach destination" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Bali Island</h5>
-            <p class="card-text">5 nights • Flight + Hotel • All-inclusive</p>
-            <a href="#" class="btn btn-primary">Book now</a>
-            <div class="text-end">
-              <small class="text-muted">Per Person</small>
-              <h5 class="fw-bold mb-0">$399</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card package-card h-100">
-          <img src="../img/caption.jpg" alt="Maldives beach paradise with luxury resort" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Maldives Beach Paradise</h5>
-            <p class="card-text">7 nights • Hanifaru Bay • luxury resorts</p>
-            <a href="#" class="btn btn-primary">Book now</a>
-            <div class="text-end">
-              <small class="text-muted">Per Person</small>
-              <h5 class="fw-bold mb-0">$499</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card package-card h-100">
-          <img src="../img/images (1).jpg" alt="Bali Island tropical beach destination" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Bali Island</h5>
-            <p class="card-text">5 nights • Flight + Hotel • All-inclusive</p>
-            <a href="#" class="btn btn-primary">Book now</a>
-            <div class="text-end">
-              <small class="text-muted">Per Person</small>
-              <h5 class="fw-bold mb-0">$399</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card package-card h-100">
-          <img src="../img/caption.jpg" alt="Maldives beach paradise with luxury resort" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Maldives Beach Paradise</h5>
-            <p class="card-text">7 nights • Hanifaru Bay • luxury resorts</p>
-            <a href="#" class="btn btn-primary">Book now</a>
-            <div class="text-end">
-              <small class="text-muted">Per Person</small>
-              <h5 class="fw-bold mb-0">$499</h5>
+      <!-- Travel Packages -->
+      <div class="col-lg-9">
+        <div class="row g-4">
+          <!-- Package 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card package-card h-100">
+              <img src="../img/images (1).jpg" alt="Bali Island tropical beach destination" class="card-img-top">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="card-title">Bali Island</h5>
+                  <span class="badge bg-success">Popular</span>
+                </div>
+                <p class="card-text small">5 nights • Flight + Hotel • All-inclusive</p>
+                <div class="d-flex align-items-center mb-3">
+                  <span class="text-warning">⭐ 4.8</span>
+                  <span class="text-muted ms-2 small">(156 reviews)</span>
+                </div>
+                <a href="#" class="btn btn-primary w-100 mb-3">Book now</a>
+                <div class="text-center">
+                  <small class="text-muted">Per Person</small>
+                  <h5 class="fw-bold mb-0">$399</h5>
+                </div>
+              </div>
             </div>
           </div>
 
+          <!-- Package 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card package-card h-100">
+              <img src="../img/caption.jpg" alt="Maldives beach paradise with luxury resort" class="card-img-top">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="card-title">Maldives Paradise</h5>
+                  <span class="badge bg-danger">Hot Deal</span>
+                </div>
+                <p class="card-text small">7 nights • Luxury resorts • All-inclusive</p>
+                <div class="d-flex align-items-center mb-3">
+                  <span class="text-warning">⭐ 4.9</span>
+                  <span class="text-muted ms-2 small">(243 reviews)</span>
+                </div>
+                <a href="#" class="btn btn-primary w-100 mb-3">Book now</a>
+                <div class="text-center">
+                  <small class="text-muted">Per Person</small>
+                  <h5 class="fw-bold mb-0">$499</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card package-card h-100">
+              <img src="../img/images (1).jpg" alt="Bali Island tropical beach destination" class="card-img-top">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="card-title">Bali Island</h5>
+                  <span class="badge bg-success">Popular</span>
+                </div>
+                <p class="card-text small">5 nights • Flight + Hotel • All-inclusive</p>
+                <div class="d-flex align-items-center mb-3">
+                  <span class="text-warning">⭐ 4.8</span>
+                  <span class="text-muted ms-2 small">(156 reviews)</span>
+                </div>
+                <a href="#" class="btn btn-primary w-100 mb-3">Book now</a>
+                <div class="text-center">
+                  <small class="text-muted">Per Person</small>
+                  <h5 class="fw-bold mb-0">$399</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card package-card h-100">
+              <img src="../img/caption.jpg" alt="Maldives beach paradise with luxury resort" class="card-img-top">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="card-title">Maldives Paradise</h5>
+                  <span class="badge bg-danger">Hot Deal</span>
+                </div>
+                <p class="card-text small">7 nights • Luxury resorts • All-inclusive</p>
+                <div class="d-flex align-items-center mb-3">
+                  <span class="text-warning">⭐ 4.9</span>
+                  <span class="text-muted ms-2 small">(243 reviews)</span>
+                </div>
+                <a href="#" class="btn btn-primary w-100 mb-3">Book now</a>
+                <div class="text-center">
+                  <small class="text-muted">Per Person</small>
+                  <h5 class="fw-bold mb-0">$499</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card package-card h-100">
+              <img src="../img/images (1).jpg" alt="Bali Island tropical beach destination" class="card-img-top">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="card-title">Bali Island</h5>
+                  <span class="badge bg-success">Popular</span>
+                </div>
+                <p class="card-text small">5 nights • Flight + Hotel • All-inclusive</p>
+                <div class="d-flex align-items-center mb-3">
+                  <span class="text-warning">⭐ 4.8</span>
+                  <span class="text-muted ms-2 small">(156 reviews)</span>
+                </div>
+                <a href="#" class="btn btn-primary w-100 mb-3">Book now</a>
+                <div class="text-center">
+                  <small class="text-muted">Per Person</small>
+                  <h5 class="fw-bold mb-0">$399</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card package-card h-100">
+              <img src="../img/caption.jpg" alt="Maldives beach paradise with luxury resort" class="card-img-top">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="card-title">Maldives Paradise</h5>
+                  <span class="badge bg-danger">Hot Deal</span>
+                </div>
+                <p class="card-text small">7 nights • Luxury resorts • All-inclusive</p>
+                <div class="d-flex align-items-center mb-3">
+                  <span class="text-warning">⭐ 4.9</span>
+                  <span class="text-muted ms-2 small">(243 reviews)</span>
+                </div>
+                <a href="#" class="btn btn-primary w-100 mb-3">Book now</a>
+                <div class="text-center">
+                  <small class="text-muted">Per Person</small>
+                  <h5 class="fw-bold mb-0">$499</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
