@@ -782,13 +782,3 @@ header {
     right: 20px;
   }
 }
-
-* {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: #f4faff;
-  padding: 40px;
-}
