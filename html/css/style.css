@@ -785,3 +785,220 @@ header {
 .partner-logos{
 margin-top: 2rem;
 }
+.visa-docs-box 
+  .visa-docs-section {
+  padding: 60px 0;
+  background: #f7f9fb;
+  font-family: Arial, sans-serif;
+}
+
+.visa-docs-box {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 45px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+/* Accent line (GoFly-style) */
+.visa-docs-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: #fcb800;
+  border-radius: 14px 0 0 14px;
+}
+
+/* Header */
+.visa-docs-header h2 {
+  font-size: 30px;
+  color: #002b5b;
+  margin-bottom: 8px;
+}
+
+ .Documents-Requirement {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Document List */
+.visa-docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visa-docs-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Bullet icon */
+.visa-docs-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #fcb800;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: rem;
+}
+
+.visa-additional-section {
+  padding: 40px 0 70px;
+  background: #f7f9fb;
+}
+
+.visa-additional-box {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 45px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+/* Accent line (same brand style) */
+.visa-additional-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: #002b5b; /* darker accent to differentiate */
+  border-radius: 14px 0 0 14px;
+}
+
+/* Header */
+.visa-additional-header h2 {
+  font-size: 28px;
+  color: #002b5b;
+  margin-bottom: 8px;
+}
+
+.visa-additional-header p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 28px;
+}
+
+/* List */
+.visa-additional-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visa-additional-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.visa-additional-list li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #002b5b;
+  font-size: 16px;
+}
+.visa-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Sidebar Card */
+.visa-side-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 20px;
+}
+
+/* Visa Type Header */
+.visa-type .tag {
+  display: inline-block;
+  background: #fcb800;
+  color: #002b5b;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.visa-type h3 {
+  font-size: 24px;
+  color: #002b5b;
+  margin-bottom: 25px;
+}
+
+/* Details List */
+.visa-side-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visa-side-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #555;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+
+.visa-side-list strong {
+  color: #002b5b;
+}
+
+/* Button */
+.apply-btn {
+  display: block;
+  text-align: center;
+  background: #002b5b;
+  color: #fff;
+  padding: 14px;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: #001f42;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .visa-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-side-card {
+    position: relative;
+  }
+}
