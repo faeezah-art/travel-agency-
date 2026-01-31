@@ -997,8 +997,65 @@ margin-top: 2rem;
   .visa-layout {
     grid-template-columns: 1fr;
   }
-
   .visa-side-card {
     position: relative;
   }
+}
+
+.visa-reject-area {
+  margin-top: 3rem;
+    background: #ffffff;
+}
+
+.reject-content .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+.reject-card {
+    background: #eaecff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    border-left: 5px solid #eaecff;
+}
+
+.reject-card.note {
+  background: #f2ffbc;
+    border-left-color: #f2ffbc;
+}
+
+.reject-card h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.reject-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reject-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+.reject-list .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #2f80ed;
+    font-size: 18px;
 }
