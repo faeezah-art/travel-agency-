@@ -781,4 +781,10 @@ header {
     bottom: 20px;
     right: 20px;
   }
+  .guide.html{
+    border-radius: 2rem;
+    margin-top: 50px;
+  }
 }
+
+
